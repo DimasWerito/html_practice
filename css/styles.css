@@ -11,11 +11,11 @@
   --dark-cl: #1e1823;
 }
 
-/* *,
+*,
 *::before,
 *::after {
   box-sizing: inherit;
-} */
+}
 
 /* #region Base styles */
 body {
@@ -68,6 +68,13 @@ button {
   outline-offset: -2px;
 }
 
+.ingredients,
+.made,
+.products,
+.bestsellers,
+.reviews {
+  padding: 60px 0;
+}
 .btn {
   font-weight: 600;
   background-color: transparent;
@@ -136,7 +143,9 @@ logo-accent {
 /* #region Header */
 .header {
 }
-
+.header .container {
+  display: flex;
+}
 .nav-link:hover,
 .nav-link:focus {
   color: #fd9222;
@@ -230,7 +239,9 @@ logo-accent {
 /* #endregion */
 
 /* #region Ingridients */
-
+.ingredients {
+  padding-top: 120px;
+}
 .ingredients-list {
 }
 .ingredients-item {
@@ -306,6 +317,7 @@ logo-accent {
 
 /* #region Reviews */
 .reviews {
+  padding-bottom: 120px;
 }
 .reviews-list {
 }
