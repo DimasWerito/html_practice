@@ -402,18 +402,39 @@ logo-accent {
 /* #region Bestsellers */
 .bestsellers {
 }
+
+.bestsellers-title {
+  margin-bottom: 50px;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
 .bestsellers-list {
+  --items: 3;
+  --col-indent: 16px;
 }
 .bestsellers-item {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
 }
 .bestsellers-caption {
+  border-radius: 15px 15px 0 0;
 }
 .bestsellers-text {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  text-align: center;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  background-color: #ffffff;
 }
 /* #endregion */
 
@@ -461,4 +482,4 @@ logo-accent {
 }
 .footer-address {
 }
-/* @endregion */
+/* #endregion */
