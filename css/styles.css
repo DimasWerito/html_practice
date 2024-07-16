@@ -9,6 +9,10 @@
   --accent-cl: #fd9222;
   --light-cl: #ffffff;
   --dark-cl: #1e1823;
+  /* Others */
+  --items: 4;
+  --col-indent: 32px;
+  --row-indent: var(--col-indent);
 }
 
 *,
@@ -56,6 +60,20 @@ button {
   color: currentColor;
   cursor: pointer;
 }
+
+/* Card Set */
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--row-indent);
+  column-gap: var(--col-indent);
+}
+
+.card-set-item {
+  width: calc((100% - var(--col-indent) * (var(--items) - 1)) / var(--items));
+}
+
 /* #endregion */
 
 /* #region Common */
@@ -68,9 +86,6 @@ button {
   outline-offset: -2px;
 }
 
-.ingredients,
-.made,
-.products,
 .bestsellers,
 .reviews {
   padding: 60px 0;
@@ -109,12 +124,14 @@ button {
 .accent {
   color: #fd9222;
 }
-.ingridients-title,
+.ingredients-title,
 .made-title,
 .products-title,
 .bestsellers-titl,
 .reviews-title,
 .footer-title {
+  width: 412px;
+  margin-bottom: 50px;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.16;
@@ -274,19 +291,50 @@ logo-accent {
 /* #region Ingridients */
 .ingredients {
   padding-top: 120px;
+  padding-bottom: 60px;
+}
+.ingredients-title {
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 .ingredients-list {
 }
 .ingredients-item {
+  padding: 28px 23px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
+.ingredients-item:nth-child(1),
+.ingredients-item:nth-child(5) {
+  background-color: #fd9222;
+  color: #fff;
+}
+
+.ingredients-item:nth-child(3),
+.ingredients-item:nth-child(7) {
+  background-color: #1e1823;
+  color: #fff;
+}
+
+.ingredients-item:nth-child(2),
+.ingredients-item:nth-child(4),
+.ingredients-item:nth-child(6) {
+  border: 1px solid #fd9222;
 }
 .ingredients-ill {
 }
 .ingredients-caption {
+  margin-top: 36px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
 }
 /* #endregion */
 
 /* #region Made */
 .made {
+  padding: 60px 0;
 }
 .made-recipe {
 }
@@ -305,14 +353,30 @@ logo-accent {
 
 /* #region Products */
 .products {
+  padding: 60px 0;
 }
+
+.products-title {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
 .products-list {
+  --row-indent: 24px;
+  --col-indent: 18px;
 }
 .products-item {
+  padding: 32px 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  text-align: center;
 }
 .products-caption {
 }
 .products-subtitle {
+  margin-top: 8px;
+  margin-bottom: 2px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
@@ -320,13 +384,18 @@ logo-accent {
   text-transform: uppercase;
 }
 .products-text {
+  margin-bottom: 18px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
 }
 .products-btn {
+  padding: 8px 20px;
   font-weight: 600;
+  background-color: #fafafa;
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
 }
 /* #endregion */
 
