@@ -337,14 +337,48 @@ logo-accent {
 .made {
   padding: 60px 0;
 }
+
+.made-title {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: var(--black, #111);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
+.made-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.made-left {
+  flex-shrink: 0;
+}
+
+.made-right {
+  padding: 32px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
 .made-recipe {
 }
 .made-subtitle {
+  margin-bottom: 28px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
 }
 .made-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .made-item {
   line-height: 1.28571;
