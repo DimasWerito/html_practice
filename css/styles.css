@@ -59,6 +59,8 @@ button {
   font-family: inherit;
   color: currentColor;
   cursor: pointer;
+  padding: 14px 40px;
+  border-radius: 100px;
 }
 
 /* Card Set */
@@ -128,7 +130,6 @@ button {
 .made-title,
 .products-title,
 .bestsellers-titl,
-.reviews-title,
 .footer-title {
   width: 412px;
   margin-bottom: 50px;
@@ -442,13 +443,38 @@ logo-accent {
 .reviews {
   padding-bottom: 120px;
 }
+
+.reviews-title {
+  margin-bottom: 92px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
 .reviews-list {
+  --items: 3;
+  --col-indent: 28px;
 }
 .reviews-item {
+  margin-bottom: 50px;
+  padding: 24px;
+  padding-top: 56px;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background-color: #fff;
 }
 .reviews-caption {
+  display: block;
+  margin: 0 auto;
+  margin-top: -106px;
 }
 .reviews-subtitle {
+  margin-top: 18px;
+  margin-bottom: 24px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
@@ -459,6 +485,11 @@ logo-accent {
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
+}
+
+.reviews-btn {
+  display: block;
+  margin: 0 auto;
 }
 /* #endregion */
 
