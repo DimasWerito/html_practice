@@ -234,6 +234,7 @@ logo-accent {
   background-color: rgba(17, 17, 17, 0.4);
 }
 .hero-title {
+  width: 484px;
   box-sizing: content-box;
   width: 484px;
   height: 102px;
