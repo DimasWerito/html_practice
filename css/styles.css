@@ -541,6 +541,7 @@ logo-accent {
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background-color: #fff;
+  box-shadow: 0px 9px 100px 0px rgba(17, 17, 17, 0.03);
 }
 .reviews-caption {
   display: block;
