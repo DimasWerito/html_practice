@@ -80,7 +80,7 @@ button {
 
 /* #region Common */
 .container {
-  width: 1168px;
+  width: 1136px;
   padding: 0 16px;
   margin: 0 auto;
 
@@ -104,6 +104,7 @@ button {
 .btn-light {
   color: white;
   border: 1px solid white;
+  background-color: transparent;
 }
 .btn-dark {
   font-weight: 600;
@@ -231,13 +232,23 @@ logo-accent {
 
 /* #region Hero */
 .hero {
-  background-color: rgba(17, 17, 17, 0.4);
+  padding-bottom: 80px;
 }
+
+.hero .container {
+  padding: 40px;
+  padding-top: 381px;
+  border-radius: 30px;
+  background-color: rgba(17, 17, 17, 0.4);
+  background-image: url("../images/hero/hero-bg.jpg");
+}
+
 .hero-title {
   width: 484px;
   box-sizing: content-box;
   width: 484px;
   height: 102px;
+  margin-bottom: 32px;
   flex-shrink: 0;
   font-weight: 500;
   font-size: 28px;
@@ -245,12 +256,23 @@ logo-accent {
   letter-spacing: -0.03em;
   color: var(--white);
 }
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .hero-list {
+  display: flex;
+  gap: 14px;
 }
 .hero-item {
 }
 
 .hero-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
