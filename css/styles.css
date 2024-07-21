@@ -407,9 +407,24 @@ logo-accent {
   gap: 24px;
 }
 .made-item {
-  line-height: 1.28571;
+  display: flex;
+  gap: 8px;
+  line-height: 1.28;
   letter-spacing: -0.02em;
 }
+
+.made-item::before {
+  content: "";
+  flex-shrink: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin-top: 5px;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+  border-radius: 50%;
+}
+
 /* #endregion */
 
 /* #region Products */
