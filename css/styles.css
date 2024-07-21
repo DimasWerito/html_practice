@@ -239,8 +239,12 @@ logo-accent {
   padding: 40px;
   padding-top: 381px;
   border-radius: 30px;
-  background-color: rgba(17, 17, 17, 0.4);
-  background-image: url("../images/hero/hero-bg.jpg");
+  background-color: rgb(var(--primary-cl) / 40%);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url("../images/hero/hero-bg.jpg");
 }
 
 .hero-title {
