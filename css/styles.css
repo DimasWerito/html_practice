@@ -205,9 +205,17 @@ logo-accent {
   border-radius: 10px;
   width: 40px;
   height: 40px;
+  color: #111;
   border: 1px solid rgba(17, 17, 17, 0.1);
 }
+
+.socials-link:hover,
+.socials-link:focus {
+  color: #fd9222;
+}
+
 .socials-icon {
+  fill: currentColor;
 }
 /* #endregion */
 
@@ -258,7 +266,7 @@ logo-accent {
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
-  color: var(--white);
+  color: #fff;
 }
 
 .hero-wrapper {
@@ -281,7 +289,7 @@ logo-accent {
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.03em;
-  color: var(--white);
+  color: #fff;
 }
 .hero-link-icon {
 }
