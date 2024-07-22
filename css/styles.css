@@ -155,6 +155,11 @@ button {
 logo-accent {
   font-style: italic;
 }
+
+.socials-logo-icon {
+  fill: orange;
+}
+
 .logo-icon {
 }
 /* #endregion */
@@ -212,12 +217,9 @@ logo-accent {
 
 .socials-link:hover,
 .socials-link:focus {
-  color: #fd9222;
+  fill: #fd9222;
 }
 
-.socials-icon {
-  fill: currentColor;
-}
 /* #endregion */
 
 /* #region Navigation */
@@ -364,7 +366,19 @@ logo-accent {
 }
 .benefits-item {
   width: 308px;
+  position: relative;
 }
+
+.benefits-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 62px);
+  right: -45px;
+  width: 1px;
+  height: 124px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
 .benefits-subtitle {
   margin-bottom: 18px;
   font-weight: 600;
