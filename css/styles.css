@@ -207,16 +207,6 @@ logo-accent {
   border: 1px solid rgba(17, 17, 17, 0.1);
 }
 
-.footer-link {
-  transition: var(--anim-fast);
-  transition-property: color;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  fill: #fd9222;
-}
-
 /* #endregion */
 
 /* #region Navigation */
@@ -614,7 +604,9 @@ logo-accent {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(464px);
+  transform: translateY(100%);
+  transition: var(--anim-slow);
+  transition-property: transform;
   display: flex;
   align-items: center;
   padding: 40px;
@@ -710,21 +702,49 @@ logo-accent {
 
 /* #region Footer */
 .footer {
+  padding: 50px 0;
+  background-color: #1e1823;
 }
+
+.footer-top {
+  display: flex;
+  gap: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgb(var(--light-cl) / 10%);
+}
+
+.footer-bottom {
+  padding-top: 24px;
+}
+
+.footer-title {
+  margin-right: auto;
+  color: #fff;
+}
+
 .footer-text {
   font-weight: 500;
   line-height: 1.28;
+  color: #fff;
 }
 .footer-list {
+  display: flex;
 }
 .footer-item {
+  color: #fff;
+  fill: #fff;
 }
 .footer-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
+  color: #fff;
   transition: var(--anim-slow);
   transition-property: color;
+}
+
+.socials-icon {
+  fill: #fff;
 }
 
 .footer-link:hover,
