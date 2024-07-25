@@ -20,6 +20,52 @@
 }
 /* #endregion */
 
+/* #region Animations */
+@keyframes move {
+  0% {
+    transform: translateX(0) scale(0.3);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateX(10px) scale(0.45);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: translateX(30px) scale(0.6);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: translateX(60px) scale(1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateX(100px) scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes horizontal-move {
+  0% {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* #endregion */
+
 /* #region Base styles */
 body {
   font-family: var(--primary-font);
@@ -67,9 +113,6 @@ img {
   width: 1168px;
   padding: 0 16px;
   margin: 0 auto;
-
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
 }
 .ingredients,
 .made,
@@ -221,12 +264,6 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
-
-  /* transition-property: color;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
-  transition-delay: 1000ms; */
-
   transition: var(--anim-fast);
   transition-property: color, opacity, transform;
 }
@@ -274,13 +311,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* background-image: url('https://static.vecteezy.com/system/resources/previews/015/119/413/original/fog-ambient-long-black-background-free-png.png'),
-    url('../images/hero/hero-bg.jpg'); */
-  /* background-position: bottom 100px left 300px, center; */
-  /* background-attachment: fixed; */
-  /* background-clip: content-box; */
-
-  /* border: 20px dashed red; */
 }
 .hero-title {
   width: 484px;
@@ -290,6 +320,9 @@ img {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+
+  /* animation: move 2000ms cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms infinite
+    alternate both; */
 }
 .hero-wrapper {
   display: flex;
@@ -337,6 +370,20 @@ img {
 .hero-link:hover .hero-link-icon {
   fill: rgb(var(--light-cl));
 }
+
+/* Btn Animations */
+/* .hero .btn {
+  animation: horizontal-move 600ms cubic-bezier(0, 0, 0.2, 1) both;
+}
+
+.hero .btn-accent {
+  animation-delay: 1100ms;
+}
+
+.hero .btn-light {
+  animation-delay: 1700ms;
+} */
+
 /* #endregion */
 
 /* #region Benefits */
@@ -403,7 +450,7 @@ img {
   border: 1px solid transparent;
   border-radius: 15px;
 }
-/* a * n + b */
+
 .ingredients-item:nth-child(2n) {
   border-color: rgb(var(--accent-cl));
 }
@@ -415,9 +462,7 @@ img {
   background-color: rgb(var(--dark-cl));
   color: rgb(var(--white-cl));
 }
-/* .ingredients-item:last-child {
-  background-color: rgb(var(--secondary-cl));
-} */
+
 .ingredients-ill {
 }
 .ingredients-caption {
@@ -458,9 +503,6 @@ img {
   background: #fff;
 }
 .made-list {
-  /* display: flex;
-  flex-direction: column;
-  gap: 24px; */
 }
 .made-item {
   display: flex;
@@ -480,12 +522,7 @@ img {
   border: 1px solid #eceded;
   border-radius: 50%;
 }
-/* .made-item {
-  margin-bottom: 24px;
-}
-.made-item:last-child {
-  margin-bottom: 0;
-} */
+
 .made-item:not(:last-child) {
   margin-bottom: 24px;
 }
@@ -709,3 +746,7 @@ img {
   color: rgb(var(--accent-cl));
 }
 /* #endregion Footer */
+
+/* #region Modal Window */
+
+/* #endregion */
