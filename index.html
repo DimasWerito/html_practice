@@ -657,7 +657,7 @@
                 id="user_name"
               />
               <svg class="modal-form-icon" width="24" height="24">
-                <use href="./images/icons.svg"></use>
+                <use href="./images/icons.svg#user"></use>
               </svg>
             </div>
           </div>
@@ -671,7 +671,7 @@
                 id="user_email"
               />
               <svg class="modal-form-icon" width="24" height="24">
-                <use href="./images/icons.svg"></use>
+                <use href="./images/icons.svg#email"></use>
               </svg>
             </div>
           </div>
@@ -685,10 +685,40 @@
                 id="user_tel"
               />
               <svg class="modal-form-icon" width="24" height="24">
-                <use href="./images/icons.svg"></use>
+                <use href="./images/icons.svg#phone"></use>
               </svg>
             </div>
           </div>
+          <div class="modal-form-field">
+            <label for="user_comment">
+              Comment
+              <textarea
+                class="modal-form-comment"
+                rows="4"
+                name="user_comment"
+                id="user_comment"
+                placeholder="Enter text"
+              ></textarea>
+            </label>
+          </div>
+          <div class="modal-form-agreement">
+            <input
+              type="checkbox"
+              name="user_agreement"
+              id="user_agreement"
+              value="false"
+            />
+            <label class="modal-form-description" for="user_agreement">
+              <span class="modal-form-checkbox">
+                <svg class="modal-form-checkbox-icon" width="10" height="10">
+                  <use href="./images/icons.svg#checkmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="modal-form-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="btn btn-accent" type="submit">Send</button>
         </form>
       </div>
     </div>
