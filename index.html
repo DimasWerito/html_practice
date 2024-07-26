@@ -640,12 +640,14 @@
 
     <div class="backdrop">
       <div class="modal">
-        <button type="button">
-          <svg class="backdrop" width="28" height="28">
-            <use href="./images/icons.svg#x-close"></use>
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-icon" width="28" height="28">
+            <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <p class="modal-caption">LEAVE A REVIEW ABOUT OUR CHOCOLATE</p>
+        <p class="modal-caption">
+          LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span>
+        </p>
         <form class="modal-form" name="user_review">
           <div class="modal-form-field">
             <label class="modal-form-label" for="user_name">Name</label>
